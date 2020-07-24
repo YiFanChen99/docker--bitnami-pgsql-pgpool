@@ -2,7 +2,9 @@ version: '3'
 
 services:
   pg-0:
-    image: bitnami/postgresql-repmgr:11
+    build:
+      context: pg
+      dockerfile: Dockerfile
     ports:
       - 5432
     volumes:
@@ -20,7 +22,9 @@ services:
     networks:
       - pg-net
   pg-1:
-    image: bitnami/postgresql-repmgr:11
+    build:
+      context: pg
+      dockerfile: Dockerfile
     ports:
       - 5432
     volumes:

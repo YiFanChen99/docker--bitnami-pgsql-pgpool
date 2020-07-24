@@ -39,3 +39,6 @@ Unable to auth by user customuser
 
 * For `postgresql-repmgr`, mount log file at `/opt/bitnami/postgresql/logs/postgresql.log`.
 
+## Jieba
+
+Should manually do `CREATE EXTENSION pg_jieba;` after DB inited.
